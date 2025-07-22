@@ -64,8 +64,8 @@ meas_len_2 = 500 * u.ns
 long_meas_len_2 = 5_000 * u.ns
 
 # Relaxation time from the metastable state to the ground state after during initialization
-relaxation_time = 300 * u.ns
-wait_for_initialization = 5 * relaxation_time
+relaxation_time = 16#300 * u.ns
+wait_for_initialization = 16#5 * relaxation_time
 
 # MW parameters
 mw_amp_NV = 0.2  # in units of volts
@@ -98,7 +98,7 @@ rf_delay = 0 * u.ns
 wait_between_runs = 100
 
 config = {
-    # "version": 1,
+    "version": 1,
     "controllers": {
         con: {
             "type": "opx1000",

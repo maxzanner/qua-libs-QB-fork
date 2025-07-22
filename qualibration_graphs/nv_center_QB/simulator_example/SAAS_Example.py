@@ -1,3 +1,4 @@
+#%%
 from qm_saas import QOPVersion
 from qm_saas import QmSaas, ClusterConfig
 from qm import QuantumMachinesManager
@@ -16,7 +17,7 @@ controller.lf_fems(2)
 with program() as prog:
     with infinite_loop_():
         play("x180", "NV")
-
+#%%
 with client.simulator(QOPVersion("v3_3_0"), cluster_config) as instance:
     # Use the instance object to simulate QUA programs
     qmm = QuantumMachinesManager(host=instance.host,
@@ -38,3 +39,5 @@ samps.con1.plot()
 plt.show(block=True)
 
 
+
+# %%
